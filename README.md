@@ -1,137 +1,101 @@
-# momentum-portfolio
-My Shopify Portfolio Website
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Momentum Team | Shopify Expert Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <title>Momentum Team | Portfolio</title>
   <style>
     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #ffffff;
-      color: #111;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
     }
     header {
-      background: #0d0d0d;
-      color: white;
-      padding: 3rem 1.5rem;
       text-align: center;
+      padding: 40px 20px;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+    header img {
+      max-width: 120px;
     }
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.85;
+    h1 {
+      font-size: 2.4rem;
+      margin-top: 10px;
+      color: #2c3e50;
     }
-    .portfolio {
-      padding: 3rem 1.5rem;
-      max-width: 1100px;
+    .bio {
+      font-size: 1.1rem;
+      margin: 10px auto 30px;
+      max-width: 600px;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 800px;
       margin: auto;
     }
-    .portfolio h2 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
+    .section h2 {
+      color: #2c3e50;
+    }
+    .contact {
+      background: #1d3557;
+      color: white;
+      padding: 30px 20px;
       text-align: center;
     }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-    .project {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 1rem;
-      text-align: center;
-    }
-    .project a {
-      color: #0077ff;
+    .contact a {
+      color: #f1faee;
       text-decoration: none;
-      font-weight: bold;
-    }
-    .services {
-      background: #f9f9f9;
-      padding: 3rem 1.5rem;
-      text-align: center;
-    }
-    .services h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-    }
-    .services ul {
-      list-style: none;
-      padding: 0;
-      font-size: 1.1rem;
-      line-height: 2rem;
     }
     footer {
-      background: #111;
-      color: white;
+      background: #f1f1f1;
       text-align: center;
-      padding: 2rem 1.5rem;
-      margin-top: 3rem;
-    }
-    .cta {
-      background: #0077ff;
-      color: white;
-      display: inline-block;
-      padding: 1rem 2rem;
-      margin-top: 2rem;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
+      padding: 10px;
+      font-size: 0.9rem;
+      color: #888;
     }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="logo.png" alt="Momentum Team Logo" />
     <h1>Momentum Team</h1>
-    <p>Driving real results through data-driven Shopify solutions and growth strategy.</p>
+    <p class="bio">
+      We are a dynamic digital solutions team specializing in Shopify, web design, and high-converting eCommerce strategies. Our mission is to help brands scale through data-driven creativity.
+    </p>
   </header>
 
-  <section class="portfolio">
-    <h2>Live Portfolio</h2>
-    <div class="projects">
-      <div class="project">
-        <h3>Deluni Jewels</h3>
-        <a href="https://delunijewels.com" target="_blank">Visit Site</a>
-      </div>
-      <div class="project">
-        <h3>Frugal Finds Galore</h3>
-        <a href="https://frugalfindsgalore.com" target="_blank">Visit Site</a>
-      </div>
-      <div class="project">
-        <h3>Eleganto Business</h3>
-        <a href="https://eleganto.business" target="_blank">Visit Site</a>
-      </div>
-      <div class="project">
-        <h3>Lakras</h3>
-        <a href="https://lakras.co" target="_blank">Visit Site</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="services">
-    <h2>Services I Offer</h2>
+  <div class="section">
+    <h2>What We Do</h2>
     <ul>
-      <li>✅ Shopify Store Setup & Optimization</li>
-      <li>✅ Google Merchant & Analytics Integration</li>
-      <li>✅ Facebook / Google Ad Campaigns</li>
-      <li>✅ AI-Powered Product & Audience Research</li>
-      <li>✅ Dropshipping Automation</li>
-      <li>✅ Performance-Based Marketing Strategy</li>
+      <li>Professional Shopify Store Setup</li>
+      <li>Product Research & Optimization</li>
+      <li>Google Merchant & Analytics Setup</li>
+      <li>Marketing Strategy & Sales Growth</li>
+      <li>AI-powered Traffic & Conversion Solutions</li>
     </ul>
-    <a class="cta" href="mailto:your@email.com">Let's Work Together</a>
-  </section>
+  </div>
+
+  <div class="section">
+    <h2>Live Store Portfolio</h2>
+    <ul>
+      <li><a href="https://delunijewels.com/" target="_blank">Deluni Jewels</a></li>
+      <li><a href="https://frugalfindsgalore.com/" target="_blank">Frugal Finds Galore</a></li>
+      <li><a href="https://eleganto.business/" target="_blank">Eleganto</a></li>
+      <li><a href="https://lakras.co/" target="_blank">Lakras</a></li>
+    </ul>
+  </div>
+
+  <div class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:penijohnathan@gmail.com">penijohnathan@gmail.com</a></p>
+  </div>
 
   <footer>
-    <p>© 2025 Momentum Team. Built with strategy & style.</p>
+    &copy; 2025 Momentum Team. All rights reserved.
   </footer>
 
 </body>
